@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!--Main section-->
+    <section class="todoList">
+
+
+
+        <div class="flip-box" id="flip">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <div class="card">
+                        <!--Date-->
+                        <div class="card--date">
+                            <div class="card--date__number">
+                                <p class="card--date__number__bold">12</p>
+                                <p>jan <br> <span class="card--date__number__light">2016</span></p>
+                            </div>
+                            <div class="card--date__number">
+                                <p>tuesday</p>
+                            </div>
+                        </div>
+                        <!--card item-->
+                        <div class="card--item">
+                            <div class="card--item__text">
+                                <p>buy new sweatshirt</p>
+                                <div class="card--item__options">
+                                    <i class="icon edit icon-edit"></i>
+                                    <i class="icon delete icon-bin"></i>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-1" />
+                                    <label for="checkbox-1"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card--item">
+                            <div class="card--item__text">
+                                <p>buy new sweatshirt</p>
+                                <div class="card--item__options">
+                                    <i class="icon edit icon-edit"></i>
+                                    <i class="icon delete icon-bin"></i>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-2" />
+                                    <label for="checkbox-2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card--item">
+                            <div class="card--item__text">
+                                <p>buy new sweatshirt</p>
+                                <div class="card--item__options">
+                                    <i class="icon edit icon-edit"></i>
+                                    <i class="icon delete icon-bin"></i>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card--btn card--add" onclick="addTask()">
+                            <i class="icon icon-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="card">
+                        <div class="card--title">
+                            <h2>Add New Task</h2>
+                        </div>
+                        
+                        <form>
+                            <input class="card--input" type="text" id="fname" name="fname" placeholder="Add New Task">
+                        </form>
+
+                        <button id="afterAddingTask" class="card--btn card--add" onclick="afterAddingTask()">
+                            <i for="afterAddingTask" class="icon icon-tick"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
